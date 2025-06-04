@@ -23,8 +23,9 @@ body {
 
     background: greenyellow;
 
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    z-index: 10;
 }
 
 .logo {
@@ -39,6 +40,8 @@ body {
     align-items: first baseline;
     gap: 8px;
     flex-shrink: 0;
+    
+    margin-right: auto;
 }
 
 #movieicon {
@@ -48,17 +51,12 @@ body {
 
 
 
-.searchbarANDmenu {
-    display: flex;
-    align-items: center;
-}
-
 .searchbarANDicon {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    min-width: 20px;
+
+    min-width: 90px;
     max-width: 250px;
     flex: 1 1 auto;
 
@@ -67,6 +65,8 @@ body {
     border: 3px solid rgb(77, 77, 77);
     border-radius: 45px;
 
+    margin-left: 1rem;
+    z-index: 10;
 }
 
 .searchbarANDicon:hover {
@@ -78,12 +78,15 @@ body {
     outline: none;
     border: none;
     border-radius: 25px;
+    flex-shrink: 1;
+    width: 80%;
+    z-index: 10;
 }
 
 button {
     border: none;
     background: none;
-    
+    flex-shrink: 0;
 }
 
 #searchicon {
@@ -103,6 +106,7 @@ button {
 
     cursor: pointer;
     flex-shrink: 0;
+    z-index: 10;
 }
 
 .bar {
@@ -111,4 +115,32 @@ button {
     margin: 3px 0;
     background: black;
     border-radius: 3px;
+}
+
+
+.menulist {
+    position: absolute;
+    top: -1000px;
+}
+
+.menulist.active {
+    position: absolute;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    background-color: greenyellow;
+    z-index:9;
+
+    transition: all 0.3s ease;
+}
+
+.item {
+    font-size: 1.3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    padding: 2rem;
+    text-wrap: nowrap;
 }
