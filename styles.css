@@ -1,0 +1,114 @@
+/* initial set up */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* initial set up end*/
+
+/* Navigation bar */
+
+.navbar {
+    display: flex;
+    height: 60px;
+    width: 100%;
+
+    background: greenyellow;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem;
+    cursor: pointer;
+    
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: first baseline;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+#movieicon {
+    width: 35px;
+    height: auto;
+}
+
+
+
+.searchbarANDmenu {
+    display: flex;
+    align-items: center;
+}
+
+.searchbarANDicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    min-width: 20px;
+    max-width: 250px;
+    flex: 1 1 auto;
+
+    height: 40px;
+    background: white;
+    border: 3px solid rgb(77, 77, 77);
+    border-radius: 45px;
+
+}
+
+.searchbarANDicon:hover {
+    border: 3px solid rgb(109, 109, 109);
+}
+
+.searchbar {
+    padding-left: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+}
+
+button {
+    border: none;
+    background: none;
+    
+}
+
+#searchicon {
+    width: 20px;
+    height: auto;
+}
+
+.menu {
+    margin: 1rem;
+    height: 35px;
+    width: 35px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.bar {
+    width: 100%;
+    height: 5px;
+    margin: 3px 0;
+    background: black;
+    border-radius: 3px;
+}
