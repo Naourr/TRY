@@ -9,7 +9,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: black;
 }
 
@@ -95,7 +95,8 @@ button {
 }
 
 .menu {
-    margin: 1rem;
+    margin-right: 2rem;
+    margin-left: 1rem;
     height: 35px;
     width: 35px;
 
@@ -161,16 +162,20 @@ button {
 }
 
 .holdsframe {
+    margin: 0;
     display: flex;
     width: 100%;
-    height: 90%;
+    height: 100%;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 60px;
 }
 .frame {
-    width: 95%;
-    height: 90%;
+    aspect-ratio: 16 / 9;
+    width: 70%;
     border-radius: 20px;
     border: 0px;
+    margin: 0;
 }
